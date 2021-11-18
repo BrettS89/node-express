@@ -1,15 +1,7 @@
-// Build a REST api with node and express
+const app = require('./app');
 
-// REST conventions
-// Resources
-// Route handlers
-// Build a REST api
+const port = process.env.PORT || 4000;
 
-// song
-  // id
-  // title
-  // artist id
-
-// artist
-  // id
-  // name
+app.listen(port, () => {
+  console.log('server started on port ' + port);
+});
